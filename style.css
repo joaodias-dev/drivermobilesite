@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Poppins-light';
+    src: url('fonts/Poppins-ExtraLight.ttf'),;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Medium.ttf'),;
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url('fonts/Poppins-Bold.ttf'),;
+}
+
+/* Font family and general styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    background-color: #134057;
+    height: 100px;
+    width: 100vw;
+    font-family: 'Poppins-light';
+    color: #f0f0f0;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+  
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Keep the image within its container */
+}
+
+.logo {
+    max-width: 65px;
+    height: auto;
+}
+
+/* Section styles */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border:0;
+    background-color: #134057;
+}
+
+.carro-perfil img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carro-perfil {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Keep the image within its container */
+    display: block; /* Remove the inline space below the image */
+    margin: 0; /* Ensure no margins are applied */
+    padding: 0; /* Ensure no padding is applied */
+    border: 0; /* Ensure no border is applied */
+}
+
+.cta {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #134057;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+    font-family: 'Poppins-bold';
+}
+
+/* Font family for "corridas" */
+.font-corridas {
+    font-family: 'Poppins-bold';
+    line-height: 1;
+    font-size: medium;
+}
+
+/* Font family for "PARTICULARES" */
+.font-particulares {
+    font-family: 'Poppins-light';
+    line-height: 1;
+    font-size: larger;
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Add padding to separate content */
+    background-color: #134057;
+    color: #f0f0f0;
+    display: block; /* Ensure main takes full width and acts like a block */
+}
+
+.info h2{
+    width: 70vw;
+    margin-bottom: 10px;
+}
+
+/* Info section styles */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.info p{
+    font-family: 'Poppins-light';
+    width: 70vw;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Grid container */
+.grid {
+    display: flex;
+    flex-direction: row; /* Stack the grid items vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1px;
+    width: 100%;
+}
+
+/* Grid item styles */
+.icone {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
+    max-width: 80px;
+    margin: 0 ;
+    font-family: 'Poppins-light';
+}
+
+/* Image responsiveness */
+.icone img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text below images */
+.icone p {
+    margin-top: 10px;
+    font-size: 7px;
+    color: #f0f0f0; /* Set white to match the design */
+    text-align: center;
+}
+
+.img-motorista{
+    background: linear-gradient(#134057, white);
+}
+
+.img-motorista img{
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Keep the image within its container */
+    border-radius: 50px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Button Container */
+.cta2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.cta2 button {
+    width: 250px;
+    height: 50px;
+    background-color: #134057;
+    color: #f0f0f0;
+    border-radius: 10px;
+    border: none; /* Removing border if you don’t want it */
+    cursor: pointer;
+    font-family: 'Poppins-bold';
+}
+
+.cta2 button:hover {
+    background-color: #0d2d3f;
+}
+
+/* Pitch Text */
+.pitch {
+    text-align: left;
+    width: 250px; /* Stretch the text to cover full width */
+    margin-bottom: 20px; /* Space between text and icon */
+}
+
+.pitch p {
+    font-size: 12px;
+    color: #134057;
+    font-family: 'Poppins';
+}
+
+.wpp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    font-size: 36px;
+    color: #25d366;
+    text-align: center;
+}
+
+.whatsapp-icon:hover {
+    color: #128c7e;
+}
+
+
+
+
+
+
+
+
+
+/* For larger screens (side by side layout) */
+@media (min-width: 768px) {
+    .grid {
+        flex-direction: row; /* Display items side by side */
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        flex-wrap: wrap; /* Allow items to wrap if there’s not enough space */
+        justify-content: space-between; /* Distribute items evenly with space between */
+        gap: 40px; /* Add more gap between items for desktop */
+    }
+
+    .icone {
+        max-width: 120px; /* Allow more width for each icon */
+    }
+}
+
+@media (min-width: 1024px) {
+    .carro-perfil {
+        max-width: 50%; /* Make the image take only half of the section width */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .cta {
+        font-size: 14px; /* Increase button size for desktop */
+        padding: 15px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px; /* Limit the width */
+        margin: 0 auto; /* Center the content */
+    }
+}
+
+    /* Estilos para o ícone do Font Awesome */
+    .whatsapp-icon {
+        font-size: 50px; /* Ajusta o tamanho do ícone */
+        color: #25D366; /* Cor verde do WhatsApp */
+        position: absolute;
+    }
